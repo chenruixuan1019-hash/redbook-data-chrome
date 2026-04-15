@@ -1,0 +1,26 @@
+{
+  "name": "xiaohongshu-data-sync",
+  "version": "1.0.0",
+  "description": "小红书内容数据自动同步工具",
+  "main": "scripts/sync-data.js",
+  "scripts": {
+    "sync": "node scripts/sync-data.js",
+    "analyze": "node scripts/analyze-data.js",
+    "test": "node scripts/test-sync.js",
+    "watch": "node scripts/watch-daemon.js",
+    "watch:stop": "pkill -f watch-daemon.js",
+    "watch:status": "ps aux | grep watch-daemon.js"
+  },
+  "keywords": [
+    "xiaohongshu",
+    "data",
+    "sync",
+    "content"
+  ],
+  "author": "chenruixuan",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "dayjs": "^1.11.10"
+  }
+}

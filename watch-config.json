@@ -1,0 +1,20 @@
+{
+  "watchDir": "~/Downloads",
+  "pollInterval": 2000,
+  "rules": [
+    {
+      "name": "xiaohongshu-data",
+      "description": "小红书数据文件自动同步",
+      "pattern": "^xiaohongshu-data-.*\\.json$",
+      "handler": "xiaohongshu-handler",
+      "enabled": true,
+      "once": true,
+      "deleteAfterProcess": true
+    }
+  ],
+  "notifications": {
+    "enabled": true,
+    "onSuccess": true,
+    "onError": true
+  }
+}

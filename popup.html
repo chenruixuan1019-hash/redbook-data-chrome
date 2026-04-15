@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小红书数据同步</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>📊 小红书数据同步</h2>
+    </div>
+    
+    <div class="content">
+      <p class="tip">💡 请确保已打开创作者中心的笔记数据页面</p>
+      
+      <button id="syncBtn" class="sync-button">
+        <span class="button-text">开始同步</span>
+      </button>
+      
+      <div id="status" class="status hidden"></div>
+      
+      <div class="info">
+        <p class="small-text">数据将自动下载为JSON文件</p>
+        <p class="small-text">请将文件重命名为 <code>data-sync-latest.json</code></p>
+        <p class="small-text">并放到项目的 <code>data/</code> 目录</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p class="version">v1.0.0</p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

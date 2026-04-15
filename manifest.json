@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "小红书数据同步助手",
+  "version": "1.0.0",
+  "description": "自动抓取小红书创作者中心数据并同步到本地",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://creator.xiaohongshu.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://creator.xiaohongshu.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
